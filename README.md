@@ -1,1 +1,2 @@
-# JavaProject
+# Kanban Board Application 
+
