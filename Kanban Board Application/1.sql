@@ -1,0 +1,50 @@
+DROP TABLE if EXISTS Columns;
+DROP TABLE if EXISTS Projects;
+DROP TABLE if EXISTS User;
+DROP TABLE if EXISTS Tasks;
+
+CREATE TABLE "Columns" (
+	"id"	INTEGER NOT NULL,
+	"ColumnID"	INTEGER NOT NULL,
+	"ColumnName"	TEXT,
+	"ProjectID"	INTEGER NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+CREATE TABLE "Projects" (
+	"id"	INTEGER NOT NULL,
+	"ProjectID"	INTEGER NOT NULL,
+	"ProjectName"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+)
+
+CREATE TABLE "User" (
+	"id"	INTEGER NOT NULL,
+	"username"	TEXT NOT NULL,
+	"password"	TEXT NOT NULL,
+	"firstname"	TEXT NOT NULL,
+	"lastname"	TEXT NOT NULL,
+	"avatar"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+)
+
+CREATE TABLE "BasicTasks" (
+	"id"	INTEGER NOT NULL,
+	"TaskID"	INTEGER NOT NULL,
+	"TaskName"	TEXT NOT NULL,
+	"TaskDescription"	TEXT NOT NULL,
+	"ProjectID"	INTEGER NOT NULL,
+	"ColumnID"	INTEGER NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);
+
+CREATE TABLE "AdvanceTasks" (
+	"id"	INTEGER NOT NULL,
+	"TaskID"	INTEGER NOT NULL,
+	"TaskName"	TEXT NOT NULL,
+	"TaskDescription"	INTEGER NOT NULL,
+	"ProjectID"	INTEGER NOT NULL,
+	"ColumnID"	INTEGER NOT NULL,
+	"TaskDate"	TEXT NOT NULL,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);

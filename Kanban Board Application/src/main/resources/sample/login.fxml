@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.usercontroller.loginController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="21.0" layoutY="167.0" text="WELCOME!">
+               <font>
+                  <Font name="SansSerif Regular" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="545.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="87.0" layoutY="26.0" text="Enter your Credentials">
+               <font>
+                  <Font name="SansSerif Regular" size="26.0" />
+               </font>
+            </Label>
+            <Label fx:id="loginMessage" layoutX="59.0" layoutY="73.0" prefHeight="20.0" prefWidth="303.0" textAlignment="RIGHT" textFill="#ff0f0f" wrapText="true">
+               <font>
+                  <Font name="SansSerif Regular" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="129.0" text="Username">
+               <font>
+                  <Font name="SansSerif Regular" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="41.0" layoutY="192.0" text="Password">
+               <font>
+                  <Font name="SansSerif Regular" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="152.0" layoutY="124.0" promptText="Username">
+               <font>
+                  <Font name="SansSerif Regular" size="17.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="152.0" layoutY="186.0" promptText="Password">
+               <font>
+                  <Font name="SansSerif Regular" size="17.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="loginButton" layoutX="316.0" layoutY="258.0" mnemonicParsing="false" onAction="#setLoginButton" text="Login">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="41.0" layoutY="258.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" text="Close">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Register" layoutX="125.0" layoutY="317.0" mnemonicParsing="false" onAction="#switchToSignUp" prefHeight="25.0" prefWidth="170.0" text="Register">
+               <font>
+                  <Font name="SansSerif Regular" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="355.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.projectcontroller.editProfile">
+    <children>
+        <BorderPane prefHeight="360.0" prefWidth="400.0">
+            <AnchorPane prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="53.0" layoutY="155.0" text="Username">
+                            <font>
+                                <Font name="SansSerif Regular" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="52.0" layoutY="197.0" text="First Name">
+                            <font>
+                                <Font name="SansSerif Regular" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="52.0" layoutY="242.0" text="Last Name">
+                            <font>
+                                <Font name="SansSerif Regular" size="20.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="FirstNameField" layoutX="181.0" layoutY="199.0" prefHeight="25.0" prefWidth="166.0" promptText="First Name" />
+                        <TextField fx:id="UsernameField" layoutX="182.0" layoutY="155.0" promptText="Username">
+                            <font>
+                                <Font name="SansSerif Regular" size="13.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="LastNameField" layoutX="181.0" layoutY="243.0" prefHeight="25.0" prefWidth="167.0" promptText="Last Name" />
+                        <Button fx:id="okBtn" layoutX="211.0" layoutY="307.0" mnemonicParsing="false" onAction="#okBtnClick" text="Ok">
+                            <font>
+                                <Font name="SansSerif Regular" size="15.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="ProfilePicChooseButton" layoutX="113.0" layoutY="106.0" mnemonicParsing="false" onAction="#displayImage" prefHeight="25.0" prefWidth="184.0" style="-fx-background-color: transparent; -fx-cursor: hand;" text="Click to select profile picture" textFill="#1952ff" underline="true">
+                            <font>
+                                <Font name="Arial" size="13.0" />
+                            </font>
+                        </Button>
+                        <ImageView fx:id="ProfileImage" fitHeight="82.0" fitWidth="93.0" layoutX="155.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/image3.jpeg" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="cancelBtn" layoutX="296.0" layoutY="306.0" mnemonicParsing="false" onAction="#cancelBtnClick" text="Cancel">
+                            <font>
+                                <Font name="SansSerif Regular" size="15.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+        </BorderPane>
+    </children>
+</AnchorPane>
